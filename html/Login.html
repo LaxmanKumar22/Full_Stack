@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<title>Login</title>
+		<script src="../js/login.js"></script>
+	</head>
+	<body>
+		<table >
+			<tr colspan="2">
+				<td><img src="..\images\Login.jpg" alt="MartLogo" alt="Login" width="200" height="150"></td></tr>
+			<tr>
+				<td><a href="..\html\HomePage.html">Home</a></td></tr>
+			<tr>
+				<td><div id="errors"></div></td></tr>
+		</table>
+		<table allign="center">
+			<form onsubmit="return validateLoginForm();" method="POST" action="product.html">
+				<tr>
+					<td><label for="emailid" name="Email Id">Email Id</label></td>
+					<td><input id="emailid" type="placeholder"></td></tr>
+				<tr>
+					<td><label for="password" name="Password">Password</label></td>
+					<td><input id="password" type="placeholder"></td></tr>
+				<tr>
+					<td><button type="submit" >Login</button></td>
+					<td><button value="clear all fields">Clear All Fields</button></td></tr>
+			</form>
+		</table>
+	</body>
+</html>

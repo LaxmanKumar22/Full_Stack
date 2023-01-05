@@ -1,0 +1,69 @@
+<html>
+	<head>
+		<title>Sign Up Form</title>
+		<script src="../js/signUp.js"></script>
+	</head>
+	<body>
+		<table align="center">
+			<tr>
+				<td colspan="2"><img src="..\images\SignUp.png" alt="SignUp" width="200" height="100"><br></td></tr>
+			<tr>
+				<td align="center"><a href="..\html\HomePage.html">Home</a></td>
+				<td align="center"><a href="..\html\Login.html">Login</a></td></tr>
+			<tr>
+				<td><div id="successMessage"></div></td>
+				<td><div id="errors"></div></td>
+			</tr>
+		</table>
+		<form>
+			<table align="center">
+				<tr>
+					<td><label for="fname" value="First name">First Name:</label></td>
+					<td><input id="fname" type="placeholder"></td></tr>
+				<tr>
+					<td><label for="lname" value="Last name">Last Name:</label></td>
+					<td><input id="lname" type="placeholder"></td></tr>
+				<tr>
+					<td><label for="dob" value="Date Of Birth">Date Of Birth:</label></td>
+					<td><input id="dob" type="date"></td></tr>
+				<tr>
+					<td><label for="email" value="Email Id:">Email Id:</label></td>
+					<td><input id="email" type="placeholder"></td></tr>
+				<tr>
+					<td><label for="phonenum" value="Phone Number">Phone Number:</label></td>
+					<td><input id="phonenum" type="placeholder"></td></tr>
+				<tr>
+					<td><label for="selectgender" value="selectgender">Select Gender</label></td>
+					<td><input id="female" type="radio" name="gender" value="Female">
+						<label for="female">Female</label>
+						<input id="male" type="radio" name="gender" value="Male">
+						<label for="male">Male</label></td></tr>
+				<tr>
+					<td><label for="intbuy" value="intbuy">Interested In Buy</label></td>
+					<td><input type="checkbox" id="cloths"><label for="cloths">Cloths</label>
+						<input type="checkbox" id="electronics"><label for="electronics">Electronics</label>
+						<input type="checkbox" id="books"><label for="books">Books</label></td></tr>
+				<tr>
+					<td><label value="country">Choose your home country</label></td>
+					<td><select id="country" name="country">
+						<option>Select country</option>
+						<option>India</option>
+						<option>Pakistan</option>
+						<option>England</option>
+						<option>United States</option></select></td></tr><br>
+				<tr>
+					<td><label for="password" name="password">Password</label></td>
+					<td><input id="password" type="placeholder"></td></tr>
+				<tr>
+					<td><label for="cpassword" name="password">Confirm Password</label></td>
+					<td><input id="cpassword" type="placeholder"></td></tr><br>
+				<tr>
+					<td><label for="shipaddress" name="password" >Shipping Address</label></td>
+					<td><textarea id="shipaddress" rows="5" cols="30"></textarea></td></tr>
+				<tr>
+					<td><button type="button" onclick="validateForm();">Sign Up</button></td>
+					<td><input type="button" onclick="confirmClearFields();" value="Clear All Fields"></td></tr>
+			</table>	
+		</form>
+	</body>
+</html>
